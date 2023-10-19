@@ -1,0 +1,37 @@
+<h2><a href="https://leetcode.com/problems/backspace-string-compare/">844. Backspace String Compare</a></h2><h3>Easy</h3><hr><div><p class="extension-adhd-reader-p"><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">G</span>iven</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>wo</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">st</span>rings</span> </span><code>s</code><span class="extension-adhd-reader-wrapper"> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">a</span>nd</span> </span><code>t</code><span class="extension-adhd-reader-wrapper">, <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">re</span>turn</span> </span><code><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>rue</span></span></code> <em><span class="extension-adhd-reader-wrapper">if <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>hey</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">a</span>re</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">e</span>qual</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">w</span>hen</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">b</span>oth</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">a</span>re</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>yped</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">i</span>nto</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">e</span>mpty</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>ext</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">ed</span>itors</span></span></em>. <code><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">'</span>#'</span></span></code><span class="extension-adhd-reader-wrapper"> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">m</span>eans</span> a <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">bac</span>kspace</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">cha</span>racter.</span></span></p>
+
+<p class="extension-adhd-reader-p"><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">N</span>ote</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>hat</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">a</span>fter</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">bac</span>kspacing</span> an <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">e</span>mpty</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>ext,</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>he</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>ext</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">w</span>ill</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">co</span>ntinue</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">em</span>pty.</span></span></p>
+
+<p class="extension-adhd-reader-p">&nbsp;</p>
+<p class="extension-adhd-reader-p"><strong class="example"><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">Ex</span>ample</span> 1:</span></strong></p>
+
+<pre><strong>Input:</strong> s = "ab#c", t = "ad#c"
+<strong>Output:</strong> true
+<strong>Explanation:</strong> Both s and t become "ac".
+</pre>
+
+<p class="extension-adhd-reader-p"><strong class="example"><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">Ex</span>ample</span> 2:</span></strong></p>
+
+<pre><strong>Input:</strong> s = "ab##", t = "c#d#"
+<strong>Output:</strong> true
+<strong>Explanation:</strong> Both s and t become "".
+</pre>
+
+<p class="extension-adhd-reader-p"><strong class="example"><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">Ex</span>ample</span> 3:</span></strong></p>
+
+<pre><strong>Input:</strong> s = "a#c", t = "b"
+<strong>Output:</strong> false
+<strong>Explanation:</strong> s becomes "c" while t becomes "b".
+</pre>
+
+<p class="extension-adhd-reader-p">&nbsp;</p>
+<p class="extension-adhd-reader-p"><strong><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">Cons</span>traints:</span></span></strong></p>
+
+<ul>
+	<li><code><span>1 &lt;= s.length, t.length &lt;= 200</span></code></li>
+	<li><span><code>s</code> and <code>t</code> only contain lowercase letters and <code>'#'</code> characters.</span></li>
+</ul>
+
+<p class="extension-adhd-reader-p">&nbsp;</p>
+<p class="extension-adhd-reader-p"><strong><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">Fo</span>llow</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">u</span>p:</span></span></strong><span class="extension-adhd-reader-wrapper"> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">C</span>an</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">y</span>ou</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">s</span>olve</span> it in </span><code><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">O</span>(n)</span></span></code><span class="extension-adhd-reader-wrapper"> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">t</span>ime</span> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">a</span>nd</span> </span><code><span class="extension-adhd-reader-wrapper"><span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">O</span>(1)</span></span></code><span class="extension-adhd-reader-wrapper"> <span class="extension-adhd-reader-container"><span class="extension-adhd-reader-boldify">sp</span>ace?</span></span></p>
+</div>
